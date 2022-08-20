@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	atom := parsers.GetAtom("19^K")
+	atom := parsers.GetAtom("5^B")
 
 	// konfigurasi elektron
 	kulitAtom := functions.KulitAtom(atom)
