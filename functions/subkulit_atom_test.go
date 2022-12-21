@@ -6,7 +6,7 @@ import (
 )
 
 func TestSubkulitAtom(t *testing.T) {
-	atom := parsers.GetAtom("5^B")
+	// atom := parsers.GetAtom("5^B")
 	raw := `
 		1s^2
 		2s^2    2p^6
@@ -17,8 +17,7 @@ func TestSubkulitAtom(t *testing.T) {
 		7s^2
 	`
 
-	subkulit := parsers.ParseSubKulitStr(&raw)
-	subkulits := SubkulitAtom(atom, subkulit)
+	subkulit := parsers.ParseSubKulitSchema(&raw)
 
-	t.Log(subkulits)
+	t.Log(subkulit)
 }
